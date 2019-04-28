@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 
 from setuptools import setup
+from pathlib import Path
 
+readme = Path("README.md").read_text()
 
-with open("README.md", "r") as f:
-    readme = f.read()
 
 setup(
     name="pydownloadfile",
     packages=["pydownloadfile"],
-    version="0.2",
+    version="0.3",
     license="GPL3",
     description="Python3 module to download files using requests.",
     long_description=readme,
@@ -18,7 +18,7 @@ setup(
     author_email="bubbledoloresuruguay2@gmail.com",
     url="https://github.com/carlosplanchon/pydownloadfile",
     download_url="https://github.com/carlosplanchon/"
-        "pydownloadfile/archive/v0.2.tar.gz",
+        "pydownloadfile/archive/v0.3.tar.gz",
     keywords=["download", "file", "requests"],
     classifiers=[
         "Intended Audience :: Developers",
