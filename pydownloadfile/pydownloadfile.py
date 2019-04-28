@@ -16,7 +16,6 @@ def download_file(
         ) -> None:
     """
     Download a file using requests.
-
     :param url: str:
         Url of the file to be downloaded.
     :param file_name: str:
@@ -34,8 +33,9 @@ def download_file(
     with open(file_name, "wb") as f:
         f.write(
             get(
-                url,
+                url=url,
                 headers=headers,
                 proxies=proxies
                 ).content
             )
+    return None
