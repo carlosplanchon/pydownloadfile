@@ -9,11 +9,13 @@ pip3 install -U pydownloadfile
 
 ## Usage
 ```
-In [1]: import pydownloadfile
+In [1]: from pathlib import Path
 
-In [4]: pydownloadfile.download_file(
+In [2]: import pydownloadfile
+
+In [3]: pydownloadfile.download_file(
     url="https://...",
-    filename="foobar..."
+    filename=Path("foobar...")
     headers=None
     proxies=None
     )
