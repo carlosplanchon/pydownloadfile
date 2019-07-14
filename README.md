@@ -15,7 +15,7 @@ In [2]: import pydownloadfile
 
 In [3]: pydownloadfile.download_file(
     url="https://...",
-    filename=Path("foobar...")
+    filepath=Path("foobar...")
     headers=None
     proxies=None
     )
